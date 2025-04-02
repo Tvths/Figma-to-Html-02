@@ -6,32 +6,40 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-weight: 400;
   font-family: "Poppins", sans-serif;
   height: 7000px;
   overflow: auto;
 }
 /* -----------------------------comma---------------------------------------- */
 /* ------------------ */
-
+h1 {
+  color: #0d1111;
+  font-family: Poppins;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.16; /* 116.129% */
+}
 /* -----------------------------header--------------------------------------- */
 .header {
   background: #ffffff;
 }
 .header.fixed {
   position: sticky;
-  top: 26px;
+  top: 0px;
   z-index: 1;
 }
-.header .main-content {
+.main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
+  background: #ffffff;
 }
 .header .header-item {
   display: flex;
   width: 1170px;
-  height: 48px;
+  height: 70px;
   align-items: center;
   margin-top: 52px;
 }
@@ -86,4 +94,33 @@ body {
 .header .action .btn-sign-up {
   border-radius: 6px;
   border: 1px solid #1ebfc1;
+}
+/* ------------------------------hero------------------------------- */
+.hero .hero-item {
+  margin-top: 62px;
+  display: flex;
+}
+.hero-item .hero-info {
+  width: 458px;
+  height: 445px;
+  padding: 96px 71px 96px 0px;
+  display: inline;
+}
+.hero-item .hero-info span {
+  color: #767e7e;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.hero-item .hero-info .title {
+  width: 458px;
+  height: 144px;
+  margin-top: 18px;
+}
+.hero-item .hero-info .desc {
+  height: 96px;
+  width: 374px;
+  color: #9da6a5;
+  font-size: 1.8rem;
+  line-height: 1.77; /* 177.778% */
+  margin-top: 46px;
 }
