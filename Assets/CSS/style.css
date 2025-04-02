@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  height: 7000px;
+  overflow: auto;
+}
+/* -----------------------------comma---------------------------------------- */
+/* ------------------ */
+
+/* -----------------------------header--------------------------------------- */
+.header {
+  background: #ffffff;
+}
+.header.fixed {
+  position: sticky;
+  top: 26px;
+  z-index: 1;
+}
+.header .main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.header .header-item {
+  display: flex;
+  width: 1170px;
+  height: 48px;
+  align-items: center;
+  margin-top: 52px;
+}
+.header .logo {
+  width: 127px;
+  height: 37px;
+}
+.header .nav {
+  margin-left: 235px;
+  width: 446px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .nav ul {
+  display: flex;
+  gap: 40px;
+}
+.header .nav ul a {
+  display: inline-block;
+  text-decoration: none;
+  color: #2f3a3b;
+  font-size: 1.6rem;
+}
+.header .nav ul .active,
+.header .nav ul a:hover {
+  text-shadow: 1px 0 0 currentColor;
+}
+.header .action {
+  width: 216px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-left: 146px;
+}
+.header .action a {
+  text-decoration: none;
+  width: 108px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1ebfc1;
+  text-align: center;
+  font-weight: 600;
+}
+.header .action .btn-sign-in {
+  color: #494949;
+  font-weight: 400;
+}
+.header .action .btn-sign-up {
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+}
