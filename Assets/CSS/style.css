@@ -13,12 +13,29 @@ body {
 }
 /* -----------------------------comma---------------------------------------- */
 /* ------------------ */
-h1 {
+h1,
+h2 {
   color: #0d1111;
   font-family: Poppins;
+  font-style: normal;
   font-size: 6.2rem;
   font-weight: 700;
   line-height: 1.16; /* 116.129% */
+}
+
+/* line champ */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+  overflow: hidden;
+}
+.break-all {
+  word-break: break-all;
 }
 /* -----------------------------header--------------------------------------- */
 .header {
@@ -399,7 +416,7 @@ h1 {
   background: #fff;
   box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
   width: 325px;
-  height: 195px;
+  height: 180px;
   padding: 18px 25px 29px;
   position: absolute;
   bottom: 0px;
@@ -417,6 +434,7 @@ h1 {
   font-size: 1.6rem;
   line-height: normal;
   margin: 16px 0 6px;
+  height: 33px;
 }
 .popular-item .item span strong {
   color: #0d1111;
@@ -445,4 +463,138 @@ h1 {
   height: 6px;
   background-color: #1ebfc1;
   border-radius: 50%;
+}
+/* --------------------------countdown------------------------------- */
+.countdown .main-content {
+  padding: 265px 154px 264px;
+}
+.countdown .countdown-item {
+  width: 862px;
+  height: 131px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.countdown .countdown-item .item {
+  width: 153px;
+  height: 131px;
+}
+.countdown-item .item .title {
+  width: 144px;
+  height: 93px;
+  text-align: center;
+}
+.countdown-item .item span {
+  color: #767e7e;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: normal;
+}
+.testtimonial .testti-item {
+  display: flex;
+  justify-content: space-between;
+}
+.testtimonial .testti-item .text {
+  padding: 37px 0px;
+}
+.testtimonial .testti-item .desc {
+  width: 419px;
+  color: #5d6564;
+  font-size: 3.2rem;
+  line-height: 1.5; /* 150% */
+  margin: 27px 0px 33px;
+}
+.testtimonial .testti-item .more-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 52px;
+}
+.testti-item .more-info .regtangle {
+  display: inline-block;
+  width: 8px;
+  height: 2px;
+  background: #070707;
+}
+.testti-item .more-info .info {
+  color: #767e7e;
+  line-height: normal;
+  margin-left: 5px;
+}
+.testti-item .more-info .info strong {
+  color: #070707;
+  font-weight: 500;
+  line-height: normal;
+}
+.testti-item .text button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.testti-item .image {
+  width: 679px;
+  height: 481px;
+  position: relative;
+}
+.testti-item .image .img {
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+.testti-item .image .img-1 {
+  width: 78px;
+  height: 78px;
+  border-radius: 78px;
+  background-color: #ffc147;
+  position: absolute;
+  top: 258px;
+  left: 0;
+}
+.testti-item .image .img-2 {
+  width: 92px;
+  height: 92px;
+  border-radius: 92px;
+  background-color: #1ebfc1;
+  position: absolute;
+  left: 144px;
+  top: 0px;
+}
+.testti-item .image .img-3 {
+  width: 78px;
+  height: 78px;
+  border-radius: 78px;
+  background-color: #ff947a;
+  position: absolute;
+  left: 212px;
+  bottom: 0px;
+}
+.testti-item .image .img-4 {
+  width: 235px;
+  height: 235px;
+  border-radius: 235px;
+  background-color: #ff8282;
+  position: absolute;
+  top: 107px;
+  left: 273px;
+}
+.testti-item .image .img-5 {
+  width: 78px;
+  height: 78px;
+  border-radius: 78px;
+  background-color: #b1dfdc;
+  position: absolute;
+  right: 32px;
+  bottom: 29px;
+}
+.testti-item .image .img-6 {
+  width: 110px;
+  height: 110px;
+  border-radius: 110px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  background-color: #bf83ff;
+  position: absolute;
+  top: 19px;
+  right: 0px;
+}
+.cta {
+  background-color: #def6f5;
+  width: 100%;
+  height: 272px;
 }
